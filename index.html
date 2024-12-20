@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login& SignUp </title>
+    <script src="https://kit.fontawesome.com/3ecac615bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    
+    
+  </head>
+  <body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form   onsubmit=" return validationForm()">
+                <h1>Create Account</h1>
+                <input type="text" placeholder="UserName" id="username">
+                <input type="email" placeholder="Email" id="email">
+                <input type="password" placeholder="Password" id="password">
+                <input type="password" placeholder="confirm Password" id="confirmpassword">
+                <span class="error"></span>
+                <button type="submit">Sign Up</button>
+                <div class="icon_container">
+                    <i class="fa-brands fa-facebook fa-xl "></i>
+                    <i class="fa-brands fa-whatsapp fa-xl "></i>
+                    <i class="fa-brands fa-telegram fa-xl"></i>
+    
+                </div>
+            </form>
+            
+
+        </div>
+        <div class="form-container sign-in">
+            <form  onsubmit=" return validationForm1()">
+                <h1>Welcome Back!</h1>
+                <input type="text" placeholder="Name" id="username1">
+                <input type="email" placeholder="Email" id="email1">
+                <input type="password" placeholder="Password" id="password1">
+                <span id="error1"></span>
+                <button type="submit">log in</button>
+                <div class="icon_container">
+                    <i class="fa-brands fa-facebook fa-xl "></i>
+                    <i class="fa-brands fa-whatsapp fa-xl "></i>
+                    <i class="fa-brands fa-telegram fa-xl"></i>
+    
+                </div>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
